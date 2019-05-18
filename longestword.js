@@ -20,7 +20,9 @@ for ( var i = 0; i < array.length; i++) {
         if ( array[i].length > longestWordInt) {
             longestWordInt = array[i].length;
             longestWord = array[i];
-  
-        console.log(longestWord, longestWordInt);
+ 
     }
+  
 }
+
+  console.log("The longest word is '", + longestWord, + "' , it is", longestWordInt, "letters long.");
