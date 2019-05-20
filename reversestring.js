@@ -8,3 +8,6 @@ console.log(stringSplit);
 var reverseSplitString = stringSplit.reverse();
 console.log(reverseSplitString);
 
+//this will merge the individual letter of the array back together, note there in no space between quotes after the .join
+var joinReversedString = reverseSplitString.join("");
+console.log(joinReversedString);
