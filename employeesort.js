@@ -7,12 +7,15 @@ var employees = [ ];
 var tempSplit =[];
 
 for ( var i = 0; i < employeeDepartments.length; i++ ) {
-    employees.push([]);
-}
-for ( var i = 0; i < employeeDepartments.length; i++ ) {
-    tempSplit = employeeDepartments.split(", ");
-    
-    
+    tempSplit.push(employeeDepartments[i].split(", "));
+    employees.push(tempSplit[i][1]);
 }
 console.log(tempSplit);
-console.log(employees);
+// console.log(employees);
+for ( var i = 0; i < employeeDepartments.length; i++ ) {
+    employees.push([]);
+}
+for (var i = 0; i < tempSplit.length; i ++){
+    employees.push(tempSplit[i][0]);
+
+}
