@@ -4,5 +4,10 @@ var numberSets = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001,
 var largestNumber = [];
 
 for ( var i = 0; i < numberSets.length; i ++){
-    console.log(numberSets[i]);
+    for ( var j = 0; j < numberSets.length; j++){
+      
+    }
+     console.log(numberSets[i][i]);
 }
+
+ 
