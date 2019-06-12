@@ -2,19 +2,18 @@ var numberSets = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001,
 
 //output the largest number of each set.
 var largestNumber = [];
-var tempMax = 0;
+
 for ( var i = 0; i < numberSets.length; i ++){
-    // var tempMax = numberSets[i][0];
+    var results = numberSets[i][0];
     for ( var j = 0; j < numberSets[i].length; j++){
-        var maxArrNumber = numberSets[i][j];
-        if (maxArrNumber > largestNumber){
-            // tempMax = maxArrNumber;
-            largestNumber[i] = maxArrNumber;
-          
+        if (numberSets[i][j] > results){
+            results = numberSets[i][j];
+           
         }
-        
+     
     }
-   
-    //  largestNumber.push(tempMax)
+ largestNumber.push(largestNumber[i] = results);   
+ largestNumber.pop();
 }
+ 
   console.log(largestNumber);
